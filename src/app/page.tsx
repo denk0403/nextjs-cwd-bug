@@ -1,7 +1,8 @@
 import { fakeModules } from "@/fakeModules";
+import { Client } from "./Client";
 
 export { fakeModules };
 
 export default function Page() {
-	return <div>Hello World</div>;
+	return <Client />
 }
