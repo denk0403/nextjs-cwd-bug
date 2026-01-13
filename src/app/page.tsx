@@ -1,11 +1,10 @@
-import { fakeModules } from "@/fakeModules";
 import { join } from "node:path";
-import { Client } from "./Client";
 
-export { fakeModules };
+// artificially inflate the bundle size
+export { fakeModules } from "@/fakeModules";
 
 export default function Page() {
-	return <Client />
+	return "Hello World";
 }
 
 export function test(a: string, b: string) {
