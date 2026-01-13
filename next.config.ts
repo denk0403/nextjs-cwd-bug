@@ -1,3 +1,4 @@
+import withBundleAnalyzer from '@next/bundle-analyzer';
 import type { NextConfig } from "next";
 import path from "path";
 import Webpack from "webpack";
@@ -46,4 +47,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+
+export default withBundleAnalyzer({ enabled: true })(nextConfig);
