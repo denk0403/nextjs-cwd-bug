@@ -8,5 +8,5 @@ export default function Page() {
 }
 
 export function test(a: string, b: string) {
-  console.log(join(process.cwd(), a));
+  console.log(join(process.cwd(), a, b));
 }
