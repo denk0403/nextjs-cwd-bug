@@ -4,7 +4,7 @@ import { join } from "node:path";
 export { fakeModules } from "@/fakeModules";
 
 export default function Page() {
-	return "Hello World";
+	return "Hello World!";
 }
 
 export function test(a: string, b: string) {
