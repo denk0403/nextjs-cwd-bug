@@ -7,7 +7,6 @@ export default function Page() {
 	return "Hello World!";
 }
 
-const CWD = process.cwd();
 export function test(a: string, b: string) {
-  console.log(join(CWD, a, b));
+  console.log(join(process.cwd(), join(a, b)));
 }
